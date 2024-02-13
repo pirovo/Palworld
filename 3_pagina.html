@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/fe8a2ef48e.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--Div Padre-->
+    <div id="Padre">
+        <h1 class="text-center text-4xl bg-yellow-500 py-3"><b>PALS</b></h1>
+
+        <!--Div que contiene 3 fotos de las cuales, dos solo se muestran en pantallas grandes-->
+        <div class="flex justify-center lg:justify-around pb-4">
+            <img src="fotos_tailwind/Pal_Legendario.png" alt="Pal" class="hidden lg:block lg:w-1/6">
+            <img src="fotos_tailwind/Estadisticas_pal.jpg" alt="palworld" class="w-100 lg:w-3/6">
+            <img src="fotos_tailwind/Pal_Rayo.png" alt="Pal" class="hidden lg:block lg:w-2/12">
+        </div>
+
+        <!--Div que contiene toda la informacion-->
+        <div id="Informacion" class="mx-2 mt-4 pb-3 lg:mx-8">
+
+            <!--Primer apartado-->
+            <h3 class="text-2xl"><b><u>9 Elementos de Pals</u></b></h3>
+            <p>Actualmente, solo existe 9 elementos. Cada elemento es debil o fuerte frente a otros elementos. Esto es una detalle 
+               imprescindible a la hora de jugar, ya que en unos determinados momentos es mas beneficioso llevar ciertos elementos 
+               antes que otros. Ademas, dependiendo si el Pal es de un elemento o una combinacion de dos, afecta a las habilidades 
+               que tendrá. A su vez, esto determina que acciones puede realizar en la base como talar, picar piedra, encender el 
+               horno, recoleccion, etc.</p>
+
+            <!--Div que contiene una tabla y la img-->
+            <div class="block lg:flex pt-2">
+
+                <!--Indica que la tabla debe estar alineada y que comience por el lado derecho del div. Ademas w-1/2 indica el ancho del div-->
+                <div class="lg:flex lg:items-center lg:justify-end lg:w-1/2">
+                    <table class="w-full border-collapse table-auto lg:table-fixed lg:w-auto">
+                        <tr class="text-white">
+                            <td class="border-2 lg:px-9 py-2 text-center bg-red-500">Fuego</td>
+                            <td class="border-2 lg:px-9 py-2 text-center bg-blue-500">Agua</td>
+                            <td class="border-2 lg:px-9 py-2 text-center bg-green-500">Planta</td>
+                        </tr>
+                        <tr class="text-white">
+                            <td class="border-2 lg:px-9 py-2 text-center bg-yellow-800">Tierra</td>
+                            <td class="border-2 lg:px-9 py-2 text-center bg-yellow-500">Electrico</td>
+                            <td class="border-2 lg:px-9 py-2 text-center bg-blue-300">Hielo</td>
+                        </tr>
+                        <tr class="text-white">
+                            <td class="border-2 lg:px-9 py-2 text-center bg-purple-500">Dragon</td>
+                            <td class="border-2 lg:px-9 py-2 text-center bg-pink-800">Oscuridad</td>
+                            <td class="border-2 lg:px-9 py-2 text-center bg-gray-500">Neutral</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <!--Foto que se situa al lado de la tabla ya que el div que lo contiene tiene un ancho de 1/2-->
+                <div class="pt-2 lg:pl-3 lg:pt-0 lg:flex lg:justify-start lg:w-1/2">
+                    <img src="fotos_tailwind/elementos-y-efectividades-entre-ellos.webp" alt="Elementos" class="w-100 lg:w-3/6"> 
+                    <!--El tamaño indicado es para que quede mas bonito visualmente, es decir que no sea ni muy grande ni tampoco muy pequeño-->
+                </div>
+            </div>
+
+            <!--Segundo apartado-->
+            <h3 class="pt-8 text-2xl"><b><u>Jefes de la torre</u></b></h3>
+
+            <!--Div, permite que sea flexible en pantallas grandes, permitiendo que se coloquen sus elementos en una misma fila-->
+            <div class="lg:flex">
+
+                <!--El 'flex-col' es para que me lo ordene en columna, conforme su posicion en html. Es decir, primero el <p></p> luego <img> y despues <p></p>-->
+                <div class="lg:flex lg:flex-col lg:items-center">
+                    <p class="text-yellow-500 text-lg"><b>Zoe y Grizzbolt</b></p>
+                    <img src="fotos_tailwind/Jefe_1_rayo.jpg" alt="Jefe" class="lg:w-5/6">
+                    <p class="pt-2 pb-5 lg:w-5/6">Zoe es el jefe de la zona forestal. Su Pal es Grizzbolt, de nv 10. Tener en cuenta 
+                                                  que es de elemento Rayo por lo que es debil frente a tipo Tierra.</p>
+                </div>
+                <div class="lg:flex lg:flex-col lg:items-center">
+                    <p class="text-yellow-500 text-lg"><b>Lily y Lyleen</b></p>
+                    <img src="fotos_tailwind/Jefe_2_Planta.jpg" alt="Jefe" class="lg:w-5/6">
+                    <p class="pt-2 pb-5 lg:w-5/6">Lily es el jefe de la zona del bosque nevado. Su Pal es Lyleen, de nv 25. Tener en 
+                                                  cuenta que es de elemento Planta por lo que es debil frente a tipo Fuego.</p>
+                </div>
+                <div class="lg:flex lg:flex-col lg:items-center">
+                    <p class="text-yellow-500 text-lg"><b>Axel y Orserk</b></p>
+                    <img src="fotos_tailwind/Jefe_3_Dragon_Rayo.jpg" alt="Jefe" class="lg:w-5/6">
+                    <p class="pt-2 pb-5 lg:w-5/6">Axel es el jefe de la zona volcanica. Su Pal es Orserk, de nv 40. Tener en cuenta 
+                                                  que es de elemento Dragon y Rayo por lo que es debil frente a tipo Hielo o Tierra.</p>
+                </div>
+            </div>
+            <div class="lg:flex">
+                <div class="lg:flex lg:flex-col lg:items-center">
+                    <p class="text-yellow-500 text-lg"><b>Marcus y Faleris</b></p>
+                    <img src="fotos_tailwind/Jefe_4_Fuego.jpg" alt="Jefe" class="lg:w-4/6">
+                    <p class="pt-2 pb-5 lg:w-4/6">Marcus es el jefe de la zona del desierto. Su Pal es Faleris, de nv 45. Tener en 
+                                                  cuenta que es de elemento Fuego por lo que es debil frente a tipo Agua.</p>
+                </div>
+                <div class="lg:flex lg:flex-col lg:items-center">
+                    <p class="text-yellow-500 text-lg"><b>Viktor y Shadowbeak</b></p>
+                    <img src="fotos_tailwind/Jefe_5_Oscuridad.jpg" alt="Jefe" class="lg:w-7/12">
+                    <p class="pt-2 pb-5 lg:w-7/12">Viktor es el jefe de la zona de la montaña nevada. Su Pal es Shadowbeak, de nv 50. 
+                                                   Tener en cuenta que es de elemento Oscuridad por lo que es debil frente a tipo Dragon.</p>
+                </div>
+            </div>
+
+            <!--Tercer apartado-->
+            <h3 class="pt-8 pb-2 text-2xl"><b><u>Legendarios</u></b></h3>
+
+            <!--Div que actua como container para el div que contien las card del tercer apartado. 'mx-auto' da margen tanto a la 
+                derecha como a la izquierda, es decir, en el eje x de forma automatica.-->
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+
+                  <!--1º Card-->
+                  <div class="bg-yellow-500 rounded-lg p-4"> <!--El 'rounded-lg' es para redondear las esquinas, del div, de forma mas pronunciada.-->
+                    <!--El 'rounded-t-lg' es para redondear las esquinas superiores de la img.-->
+                    <img class="w-full rounded-t-lg" src="fotos_tailwind/jetragon_legendario.jpg" alt="1º Card">
+                    <div class="flex flex-col justify-between p-4">
+                      <h5 class="mb-2 text-xl font-bold text-white">Jetragon</h5>
+                      <p class="mb-3 text-white">Se encuentra a nv 50, en la zona volcanica. Tambien se puede encontrar en otras zonas.</p>
+                    </div>
+                  </div>
+
+                  <!--2º Card-->
+                  <div class="bg-yellow-500 rounded-lg p-4">
+                    <img class="w-full rounded-t-lg" src="fotos_tailwind/Frostallion_1_legendario.png" alt="2º Card">
+                    <div class="flex flex-col justify-between p-4">
+                      <h5 class="mb-2 text-xl font-bold  text-white">Frostallion</h5>
+                      <p class="mb-3 text-white">Se encuentra a nv 50, en la zona del gran monte nevado. Solo se encuentra en esa zona.</p>
+                    </div>
+                  </div>
+
+                  <!--3º Card-->
+                  <div class="bg-yellow-500 rounded-lg p-4">
+                    <img class="w-full rounded-t-lg" src="fotos_tailwind/Necromus_legendario.jpg" alt="3º Card">
+                    <div class="flex flex-col justify-between p-4">
+                      <h5 class="mb-2 text-xl font-bold text-white">Necromus</h5>
+                      <p class="mb-3 text-white">Se encuentra a nv 50, en la zona desertico. Solo se encuentra en esa zona.</p>
+                    </div>
+                  </div>
+
+                  <!--4º Card-->
+                  <div class="bg-yellow-500 rounded-lg p-4">
+                    <img class="w-full rounded-t-lg" src="fotos_tailwind/Paladius_legendario.jpg" alt="4º Card">
+                    <div class="flex flex-col justify-between p-4">
+                      <h5 class="mb-2 text-xl font-bold  text-white">Paladius</h5>
+                      <p class="mb-3 text-white">Se encuentra a nv 50, en la zona desertico. Solo se encuentra en esa zona.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Parte final-->
+        <div id="Final" class="bg-gray-900 pt-3 pb-3">
+            <div class="mx-2 text-center text-yellow-500">
+                <a href="index.html" class="text-xl"><b><u>PALWORLDERS</u></b></a>
+                <div class="flex justify-around lg:justify-center pb-4 lg:pb-4 lg:pt-2">
+                    <p class="lg:pr-3"><a href="index.html"><b><u>Inicio</u></b></a></p>
+                    <p class="lg:pr-3"><a href="2_pagina.html"><b><u>Trayectoria</u></b></a></p>
+                    <p><a href="3_pagina.html"><b><u>Pals</u></b></a></p>
+                </div>
+
+                <!--Div que contiene los iconos de fontawesowe-->
+                <div class="flex justify-evenly lg:justify-center pt-6 pb-8 lg:pb-2">
+                    <i class="fa-brands fa-instagram fa-2xl lg:pr-10" style="color: #d04d3e;"></i>
+                    <i class="fa-brands fa-square-facebook fa-2xl lg:pr-6 lg:pl-4" style="color: #2c67ce;"></i>
+                    <i class="fa-brands fa-x-twitter fa-2xl lg:pr-11 lg:pl-8" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-youtube fa-2xl lg:pl-2" style="color: #f60909;"></i>
+                </div>
+
+                <!--Estos div sirven para la pantalla pequeña-->
+                <div class="flex justify-around lg:hidden">
+                    <p class="mb-0">Privacidad</p>
+                    <p class="mb-0">Aviso legal</p>
+                    <p class="mb-0">Licencia</p>
+                </div>
+                <div class="flex justify-around lg:hidden pb-2">
+                    <p>Politicas de cookies</p>
+                    <p>Consentimiento</p>
+                </div>
+
+                <!--Div dedicado especialmente a que en pantallas grandes, esten todos en la misma fila-->
+                <div class="hidden lg:flex lg:justify-evenly lg:pt-5 text-base">
+                    <p>Privacidad</p>
+                    <p>Aviso legal</p>
+                    <p>Licencia</p>
+                    <p>Politicas de cookies</p>
+                    <p>Consentimiento</p>
+                </div>
+                <p class="text-base pt-4 pb-2">© 2024 PALWORLDERS, S.L. Derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -38,6 +38,7 @@
     </nav>
 
     <div id="Padre">
+        <!--Carousel-->
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -65,7 +66,10 @@
             </button>
         </div>
         
-        <div id="Informacion" class="mx-2 mt-4 pb-3">
+        <!--Div donde está toda la información de la pagina-->
+        <div id="Informacion" class="mx-2 mt-4 pb-3 mx-lg-4">
+            
+            <!--Primer apartado-->
             <h3><b><u>Que es</u></b></h3>
             <p>Palworld, desarrollado por Pocketpair, es una aventura para un jugador y con multijugador con mundo abierto, 
                supervivencia y creación que nos permite coleccionar y domar unas criaturas llamadas Pal. Esta descripción lógicamente 
@@ -79,13 +83,18 @@
                 posibilidades en compañía, lo que agilizará muchas tareas, por no hablar de la posibilidad para cambiar Pals o incluso 
                 luchar contra otros jugadores. Un ambicioso "Pokémon de nueva generación" que quiere subir el listón en el género.</p>
             
+            <!--Segundo apartado-->
             <h3><b><u>Requisitos en PC</u></b></h3>
             <p>Estos son los requerimientos y especificaciones técnicas oficiales que necesita tu ordenador para el correcto 
-                funcionamiento. Además, asi sabras saber el espacio que ocupa, cuanto de RAM, procesador o grafica es recomendable 
-                usar para tener el mejor rendimiento.</p>
+               funcionamiento. Además, asi sabrás el espacio que ocupa, cuanto de RAM, procesador o que gráfica es recomendable 
+               usar para tener el mejor rendimiento.</p>
             <h5><b>Requisitos para Windows</b></h5>
+
+            <!--Div que incluye los requisitos mínimos y su card-->
             <div class="row mb-4">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="col-lg-6"> <!--El 'col-lg-6' indica que este div y el div de la card, se pondran uno al lado del 
+                                        otro en pantallas grandes. En pantallas pequeña, el primer div ocupara todo el ancho 
+                                        de la fila, provocando que el div de la card se ponga debajo de este.-->
                     <p class="mb-0"><b>Requisitos mínimos</b></p>
                     <ul>
                         <li><b>SO:</b> Windows 10 (64-Bit)</li>
@@ -98,16 +107,18 @@
                     </ul>
                 </div>
                 
+                <!--Card de los requisitos mínimos-->
                 <div class="card p-0" style="width: 25rem;">
                     <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/extras/gif01_survival.gif?t=1705662211" class="w-100" class="card-img-top" alt="...">
                     <div class="card-body pb-0 pt-0 bg-warning">
                         <p class="card-text text-center"><b>Como se ve en requisitos minimos</b></p>
                     </div>
                 </div>
-                
             </div>
+
+            <!--Div que incluye los requisitos recomendados y su card-->
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="col-lg-6">
                     <p class="mb-0"><b>Requisitos recomendados</b></p>
                     <ul>
                         <li><b>SO:</b> Windows 10 (64-Bit)</li>
@@ -120,18 +131,24 @@
                     </ul>
                 </div>
 
+                <!--Card de los requisitos recomendados-->
                 <div class="card p-0" style="width: 25rem;">
                     <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/extras/gif02_riding.gif?t=1705662211" class="w-100" class="card-img-top" alt="...">
                     <div class="card-body pb-0 pt-0 bg-warning">
                         <p class="card-text text-center"><b>Como se ve en requisitos recomendados</b></p>
                     </div>
                 </div>
-
             </div>
         </div>
+
+        <!--Formulario-->
         <div id="Formulario" class="bg-warning pb-3 pt-2">
-            <div id="Contenido_Formulario" class="mx-2">
+
+            <!--Este div es necesario para que el 'mx-2' no afecte al 'bg-dark' de todo el formulario-->
+            <div id="Contenido_Formulario" class="mx-2 mx-lg-4">
                 <h3><b>Unete a nuestra comunidad</b></h3>
+
+                <!--Cuerpo del formulario-->
                 <form class="row g-3 needs-validation" action="https://httpbin.org/get" target="_blank" method="get">
                     <div class="col-md-4 position-relative">
                         <label for="validationTooltip01" class="form-label">Nombre</label>
@@ -167,7 +184,7 @@
                         </select>
                     </div>
                     <div class="col-md-3 position-relative">
-                        <label for="validationTooltip05" class="form-label">Correo Electronico</label>
+                        <label for="validationTooltip05" class="form-label">Correo Electrónico</label>
                         <input type="email" class="form-control" id="validationTooltip05" required>
                     </div>
                     <div class="col-12">
@@ -177,7 +194,10 @@
                 </form>
             </div>
         </div>
+
+        <!--Parte final-->
         <div id="Final" class="bg-dark pt-3 pb-1">
+
             <div class="mx-2 text-center text-warning">
                 <h5><b><a href="#" class="text-warning">PALWORLDERS</a></b></h5>
                 <div class="d-flex justify-content-around justify-content-lg-center">
@@ -186,12 +206,15 @@
                     <p><a href="3_pagina.html" class="text-warning"><b>Pals</b></a></p>
                 </div>
                 
+                <!--Div que contiene los iconos de fontawesowe-->
                 <div class="d-flex justify-content-evenly pt-4 pb-4 justify-content-lg-center">
                     <i class="fa-brands fa-instagram fa-2xl pe-lg-5" style="color: #d04d3e;"></i>
                     <i class="fa-brands fa-square-facebook fa-2xl pe-lg-5" style="color: #2c67ce;"></i>
                     <i class="fa-brands fa-x-twitter fa-2xl pe-lg-5" style="color: #ffffff;"></i>
                     <i class="fa-brands fa-youtube fa-2xl" style="color: #f60909;"></i>
                 </div>
+
+                <!--Estos div sirven para la pantalla pequeña-->
                 <div class="d-flex justify-content-around d-lg-none pt-2">
                     <p class="mb-0">Privacidad</p>
                     <p class="mb-0">Aviso legal</p>
@@ -201,11 +224,13 @@
                     <p>Politicas de cookies</p>
                     <p>Consentimiento</p>
                 </div>
+
+                <!--Div dedicado especialmente a que en pantallas grandes, esten todos en la misma fila-->
                 <div class="d-none d-lg-flex justify-content-evenly pt-2">
                     <p>Privacidad</p>
                     <p>Aviso legal</p>
                     <p>Licencia</p>
-                    <p>Politicas de cookies</p>
+                    <p>Políticas de cookies</p>
                     <p>Consentimiento</p>
                 </div>
                 <p>© 2024 PALWORLDERS, S.L. Derechos reservados.</p>
